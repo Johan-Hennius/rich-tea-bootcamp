@@ -90,10 +90,11 @@ body {
     font-family: 'DM Sans', sans-serif;
     font-size: 1rem;
     color: black;
-    width: 80vw;
-    background-color: #f59994;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* background-color: #f59994;
     background-image: linear-gradient(to right, #f59994 65%, #abf5ed);
-}
+} */
 
 i {
     color: black;
@@ -104,12 +105,15 @@ a {
     text-decoration: none;
 }
 
-
-
 h1 {
   font-size: 4rem;
   font-weight: 600;
   line-height: 3.5rem;
+}
+
+h2 {
+ font-size: 2rem;
+ font-weight: 600;
 }
 
 /* Navigation */
@@ -117,30 +121,33 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
+  gap: 1rem;
   padding: .5rem;
-  width: 80vw;
+  width: 100%;
   
   min-height: 2rem;
 }
 
 .rtb-logo {
-  display: block;
-  flex: 0 1 auto;
   font-size: 2rem;
   font-weight: 600;
+  width: 33%;
+}
+
+.header-navigation {
+  width: 33%;
 }
 
 .nav-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  flex-direction: row;
+  justify-content: space-between;
   gap: 1rem;
 
   font-weight: 600;
-  background-color: #abf5ed;
-  width: 90vw;
-  padding: 1rem;
+  text-align: right;
 }
 
 .mobile-nav-button {
@@ -155,3 +162,26 @@ h1 {
   display: none;
 }
 
+/* Main body */
+.three-column {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  column-gap: 1em;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 810px) {
+  .header-navigation {
+    display: none;
+  }
+}
+
+@media (min-width: 811px) {
+  .mobile-nav-button {
+    display: none;
+  }
+}
