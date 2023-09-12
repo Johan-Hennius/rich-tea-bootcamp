@@ -123,7 +123,7 @@ h2 {
   align-items: center;
 
   gap: 1rem;
-  padding: .5rem;
+  padding-top: .5rem;
   width: 100%;
   
   min-height: 2rem;
@@ -172,6 +172,9 @@ h2 {
 .column {
   display: flex;
   flex-direction: column;
+  text-align: center;
+
+  width: auto;
 }
 
 @media (max-width: 810px) {
