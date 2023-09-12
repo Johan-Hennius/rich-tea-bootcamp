@@ -163,6 +163,31 @@ h2 {
 }
 
 /* Main body */
+.main-container {
+  min-height: 60vh;
+}
+
+/* Heading and button */
+.heading-and-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 30em;
+}
+
+.heading-container {
+  align-self: flex-start;
+}
+
+.cta-container {
+  
+}
+
+.tagline {
+  text-align: center;
+}
+
 .three-column {
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -173,7 +198,7 @@ h2 {
   display: flex;
   flex-direction: column;
   text-align: center;
-
+  gap: 1rem;
   width: auto;
 }
 
