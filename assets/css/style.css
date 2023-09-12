@@ -1,6 +1,20 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,400;0,9..40,600;1,9..40,200;1,9..40,400;1,9..40,600&display=swap');
 
+/* Visually Hidden */
+.visually-hidden {
+  position: absolute;
+position: absolute !important;
+width: 1px !important;
+height: 1px !important;
+padding: 0 !important;
+margin: -1px !important;
+overflow: hidden !important;
+clip: rect(0,0,0,0) !important;
+white-space: nowrap !important;
+border: 0 !important;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -76,8 +90,9 @@ body {
     font-family: 'DM Sans', sans-serif;
     font-size: 1rem;
     color: black;
+    width: 80vw;
     background-color: #f59994;
-    background-image: linear-gradient(to right top, #f59994 70%, #abf5ed);
+    background-image: linear-gradient(to right, #f59994 65%, #abf5ed);
 }
 
 i {
@@ -89,13 +104,22 @@ a {
     text-decoration: none;
 }
 
+
+
+h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+}
+
+/* Navigation */
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   
   padding: .5rem;
-  width: 90%;
+  width: 80vw;
   
   min-height: 2rem;
 }
@@ -110,13 +134,24 @@ a {
 .nav-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 
   font-weight: 600;
+  background-color: #abf5ed;
+  width: 90vw;
+  padding: 1rem;
 }
 
-h1 {
-  font-size: 4rem;
-  font-weight: 600;
-  line-height: 3.5rem;
+.mobile-nav-button {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  padding: .25em;
 }
+
+.mobile-nav-button .icon-x {
+  font-size: 1.2rem;
+  display: none;
+}
+
