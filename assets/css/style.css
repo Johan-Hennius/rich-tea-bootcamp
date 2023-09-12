@@ -77,6 +77,7 @@ body {
     font-size: 1rem;
     color: black;
     background-color: #f59994;
+    background-image: linear-gradient(to right top, #f59994 70%, #abf5ed);
 }
 
 i {
@@ -86,4 +87,36 @@ i {
 a {
     color: black;
     text-decoration: none;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: .5rem;
+  width: 90%;
+  
+  min-height: 2rem;
+}
+
+.rtb-logo {
+  display: block;
+  flex: 0 1 auto;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 3.5rem;
 }
