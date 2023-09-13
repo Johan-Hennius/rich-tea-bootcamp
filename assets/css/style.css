@@ -174,37 +174,32 @@ h2 {
   justify-content: space-between;
   align-items: center;
   min-height: 30em;
+  text-align: center;
 }
 
 .heading-container {
   align-self: flex-start;
+  text-align: left;
 }
 
 .cta-container {
-  
-}
-
-.tagline {
-  text-align: center;
+  padding: 10rem;
 }
 
 .three-column {
   display: grid;
   grid-template-columns: repeat(3, 33%);
   column-gap: 1.5rem;
+  max-width: 95%;
 }
 
 .column {
-  max-width: 100%;
-}
-
-/* .column {
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 1rem;
   padding: 1rem;
-} */
+}
 
 @media (max-width: 810px) {
   .header-navigation {
