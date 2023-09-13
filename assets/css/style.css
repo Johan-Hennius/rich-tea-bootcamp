@@ -190,17 +190,21 @@ h2 {
 
 .three-column {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  column-gap: 1em;
+  grid-template-columns: repeat(3, 33%);
+  column-gap: 1.5rem;
 }
 
 .column {
+  max-width: 100%;
+}
+
+/* .column {
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 1rem;
-  width: auto;
-}
+  padding: 1rem;
+} */
 
 @media (max-width: 810px) {
   .header-navigation {
