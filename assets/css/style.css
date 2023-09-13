@@ -171,19 +171,20 @@ h2 {
 .heading-and-button-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  min-height: 30em;
+  min-height: 35em;
   text-align: center;
 }
 
 .heading-container {
   align-self: flex-start;
   text-align: left;
+  padding-bottom: 5em;
 }
 
 .cta-container {
-  padding: 10rem;
+  padding: 5em;
 }
 
 .three-column {
