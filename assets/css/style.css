@@ -3,7 +3,7 @@
 
 /* Visually Hidden */
 .visually-hidden {
-  position: absolute;
+position: absolute;
 position: absolute !important;
 width: 1px !important;
 height: 1px !important;
@@ -122,21 +122,21 @@ h2 {
   justify-content: space-between;
   align-items: center;
 
-  gap: 1rem;
-  padding-top: .5rem;
+  gap: 1em;
+  padding-top: .5em;
   width: 100%;
   
-  min-height: 2rem;
+  min-height: 2em;
 }
 
 .rtb-logo {
   font-size: 2rem;
   font-weight: 600;
-  width: 33%;
+  width: 45%;
 }
 
 .header-navigation {
-  width: 33%;
+  flex: 0 1 auto;
 }
 
 .nav-list {
@@ -144,10 +144,10 @@ h2 {
 
   flex-direction: row;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2em;
 
   font-weight: 600;
-  text-align: right;
+  text-align: center;
 }
 
 .mobile-nav-button {
@@ -162,11 +162,6 @@ h2 {
   display: none;
 }
 
-/* Main body */
-.main-container {
-  min-height: 60vh;
-}
-
 /* Heading and button */
 .heading-and-button-container {
   display: flex;
@@ -179,6 +174,7 @@ h2 {
 
 .heading-container {
   align-self: flex-start;
+  justify-self: center;
   text-align: left;
   padding-bottom: 5em;
 }
@@ -187,11 +183,14 @@ h2 {
   padding: 5em;
 }
 
-.three-column {
+.grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 33%);
-  column-gap: 1.5rem;
-  max-width: 95%;
+  max-width: 100%;
+  margin: 5em 0;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3em;
+
+  grid-auto-rows: minmax(15em, auto);
 }
 
 .column {
@@ -199,7 +198,6 @@ h2 {
   flex-direction: column;
   text-align: center;
   gap: 1rem;
-  padding: 1rem;
 }
 
 @media (max-width: 810px) {
