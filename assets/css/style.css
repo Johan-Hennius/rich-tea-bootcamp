@@ -106,9 +106,9 @@ a {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5.5rem;
   font-weight: 600;
-  line-height: 3.5rem;
+  line-height: 5rem;
 }
 
 h2 {
@@ -175,8 +175,7 @@ h2 {
 .heading-container {
   align-self: flex-start;
   text-align: left;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  margin-top: 5em;
 }
 
 .tagline {
