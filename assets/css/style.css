@@ -166,7 +166,7 @@ h2 {
 .heading-and-button-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   min-height: 35em;
   text-align: center;
@@ -174,23 +174,29 @@ h2 {
 
 .heading-container {
   align-self: flex-start;
-  justify-self: center;
   text-align: left;
-  padding-bottom: 5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.tagline {
+  padding: 1em;
 }
 
 .cta-container {
-  padding: 5em;
+  margin-bottom: 10em;
 }
 
 .grid-container {
   display: grid;
   max-width: 100%;
-  margin: 5em 0;
+  /* margin: 5em 0; */
   grid-template-columns: repeat(3, 1fr);
   column-gap: 3em;
 
   grid-auto-rows: minmax(15em, auto);
+  align-items: start;
+  justify-content: center;
 }
 
 .column {
