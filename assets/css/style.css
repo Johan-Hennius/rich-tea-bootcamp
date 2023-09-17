@@ -181,11 +181,45 @@ hr {
   margin-bottom: 5em;
 }
 
-
-.cta-container {
-  margin-top: 2.5em;
+.tagline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.cta-button {
+  color: white;
+  display: inline-block;
+  text-align: center;
+  font-weight: 800;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin-top: 2.5em;
+  border-radius: 50%;
+  border: none;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  width: 15em;
+  height: 15em;
+}
+
+.cta-container:hover {
+  background-color: rgb(31, 31, 165);
+  width: 17em;
+  height: 17em;
+  font-size: 4em;
+}
+
+
+/* Grid */
 .grid-container {
   display: grid;
   max-width: 100%;
