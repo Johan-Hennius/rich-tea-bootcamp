@@ -166,9 +166,9 @@ h2 {
 .heading-and-button-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  min-height: 35em;
+  height: 70vh;
   text-align: center;
 }
 
@@ -176,14 +176,16 @@ h2 {
   align-self: flex-start;
   text-align: left;
   margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 .tagline {
+  margin-bottom: 5em;
   padding: 1em;
 }
 
 .cta-container {
-  margin-bottom: 10em;
+  margin-top: 2.5em;
 }
 
 .grid-container {
