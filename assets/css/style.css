@@ -154,7 +154,8 @@ hr {
   text-align: center;
 }
 
-.mobile-nav-button {
+
+/* .mobile-nav-button {
   cursor: pointer;
   background: none;
   border: 0;
@@ -164,7 +165,7 @@ hr {
 .mobile-nav-button .icon-x {
   font-size: 1.2rem;
   display: none;
-}
+} */
 
 /* Heading and button */
 .heading-and-button-container {
@@ -274,13 +275,15 @@ hr {
 }
 
 @media (max-width: 810px) {
-  .header-navigation {
+   .header-navigation {
     display: none;
-  }
+  } 
+
 }
 
 @media (min-width: 811px) {
   .mobile-nav-button {
     display: none;
   }
+
 }
