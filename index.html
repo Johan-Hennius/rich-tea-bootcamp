@@ -16,21 +16,24 @@
 
 <body>
     <header>
-        <div class="header-container">
+        <nav class="header-container">
             <!-- Logo -->
             <a aria-label="link to home page" href="index.html" class="rtb-logo">RTB</a>
-
-
             <!-- Navigation Menu -->
-            <nav class="header-navigation" id="header-navigation">
-                <ul class="nav-list" role="list">
-                    <li><a aria-label="link to home page" href="index.html">Home</a></li>
-                    <li><a aria-label="link to courses page" href="courses.html">Courses</a></li>
-                    <li><a aria-label="link to about page" href="about.html">About</a></li>
-                    <li><a aria-label="link to contact page" href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+            <ul class="nav-list" role="list">
+                <li><a aria-label="link to home page" href="index.html" class="active">Home</a></li>
+                <li><a aria-label="link to courses page" href="courses.html">Courses</a></li>
+                <li><a aria-label="link to about page" href="about.html">About</a></li>
+                <li><a aria-label="link to contact page" href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Sign Up -->
+            <a href="courses.html">
+                <button class="nav-cta-button" type="submit">Learn!</button>
+            </a>
+            <div class="toggle-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
     </header>
     <main>
         <!-- Main page -->

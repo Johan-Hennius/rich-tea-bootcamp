@@ -103,6 +103,14 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+  color: rgb(31, 31, 165);
+}
+
+.active {
+  color: rgb(31, 31, 165);
+}
+
 h1 {
   font-size: 4.5rem;
   font-weight: 600;
@@ -136,13 +144,11 @@ hr {
 .rtb-logo {
   font-size: 2rem;
   font-weight: 600;
-  width: 33%;
 }
 
 .nav-list {
   display: flex;
 
-  flex-direction: row;
   justify-content: space-between;
   gap: 2em;
 
@@ -150,6 +156,27 @@ hr {
   text-align: center;
 }
 
+.nav-cta-button {
+  color: white;
+  background-color: black;
+  text-align: center;
+  border: none;
+  border-radius: 1em;
+  width: 6em;
+  height: 2em;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.nav-cta-button:hover {
+  background-color: rgb(31, 31, 165);
+}
+
+.toggle-button {
+  font-size: 1.8em;
+}
 
 /* Heading and button */
 .heading-and-button-container {
