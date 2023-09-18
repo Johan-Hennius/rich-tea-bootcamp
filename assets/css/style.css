@@ -104,7 +104,7 @@ a {
 }
 
 h1 {
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   font-weight: 600;
   line-height: 5rem;
 }
@@ -155,18 +155,6 @@ hr {
 }
 
 
-/* .mobile-nav-button {
-  cursor: pointer;
-  background: none;
-  border: 0;
-  padding: .25em;
-}
-
-.mobile-nav-button .icon-x {
-  font-size: 1.2rem;
-  display: none;
-} */
-
 /* Heading and button */
 .heading-and-button-container {
   display: flex;
@@ -176,10 +164,11 @@ hr {
   text-align: center;
   margin-bottom: 2.5em;
   min-height: 70vh;
+  min-width: 70vw;
 }
 
-.heading-container {
-  margin-bottom: 5em;
+.heading-and-button-container h1 {
+  margin-bottom: .25em;
 }
 
 .tagline {
@@ -191,34 +180,22 @@ hr {
 
 .cta-button {
   color: white;
-  display: inline-block;
+  background-color: black;
   text-align: center;
+  border: none;
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em;
   font-weight: 800;
   font-size: 3em;
+  margin-top: .5em;
   margin-bottom: 0.5em;
+  cursor: pointer;
 }
 
-.cta-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  margin-top: 2.5em;
-  border-radius: 50%;
-  border: none;
-  padding-left: 2.5em;
-  padding-right: 2.5em;
-  width: 15em;
-  height: 15em;
-}
-
-.cta-container:hover {
+.cta-button:hover {
   background-color: rgb(31, 31, 165);
-  width: 17em;
-  height: 17em;
-  font-size: 4em;
 }
-
 
 /* Grid */
 .grid-container {
@@ -272,18 +249,4 @@ hr {
 .vertical-line {
   border-left: 1px solid black;
   height: 112px;
-}
-
-@media (max-width: 810px) {
-   .header-navigation {
-    display: none;
-  } 
-
-}
-
-@media (min-width: 811px) {
-  .mobile-nav-button {
-    display: none;
-  }
-
 }
