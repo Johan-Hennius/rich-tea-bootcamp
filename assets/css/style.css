@@ -168,15 +168,72 @@ hr {
   margin-top: 0;
   margin-bottom: 0;
   cursor: pointer;
+  transition: scale 0.2 ease-out;
 }
 
 .nav-cta-button:hover {
   background-color: rgb(31, 31, 165);
+  scale: 1.05;
 }
 
-.toggle-button {
-  font-size: 1.8em;
+.header-container .toggle-button {
+  font-size: 1.9em;
+  cursor: pointer;
+  display: none;
+  order: 3;
 }
+
+/* Dropdown menu */
+.dropdown-menu {
+  display: none;
+  order: 2;
+
+  text-align: center; 
+
+  width: 100%;
+  height: 0;
+  background-color: rgba(31, 31, 165, .2);
+  overflow: hidden;
+  transition: height .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+  min-height: 12em;
+}
+
+.dropdown-menu-list {
+  list-style-type: none;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  justify-content: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.dropdown-cta-button {
+  color: white;
+  background-color: black;
+  text-align: center;
+  border: none;
+  border-radius: 1em;
+  width: 6em;
+  height: 2em;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+  transition: scale .3s ease-out;
+}
+
+.dropdown-cta-button:hover {
+  background-color: rgb(31, 31, 165);
+  scale: 1.05;
+}
+
+
+
 
 /* Heading and button */
 .heading-and-button-container {
@@ -214,10 +271,12 @@ hr {
   margin-top: .5em;
   margin-bottom: 0.5em;
   cursor: pointer;
+  transition: scale .3s ease-out;
 }
 
 .cta-button:hover {
   background-color: rgb(31, 31, 165);
+  scale: 1.05;
 }
 
 /* Grid */
@@ -272,4 +331,21 @@ hr {
 .vertical-line {
   border-left: 1px solid black;
   height: 112px;
+}
+
+/* Responsive Design */
+@media (max-width: 810px) {
+  .nav-list,
+  .nav-cta-button,
+  .nav-cta-link {
+    display: none;
+  }
+
+  .header-container .toggle-button {
+    display: block;
+  }
+
+  .dropdown-menu {
+    display: block;
+  }
 }

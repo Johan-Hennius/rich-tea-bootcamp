@@ -27,11 +27,24 @@
                 <li><a aria-label="link to contact page" href="contact.html">Contact</a></li>
             </ul>
             <!-- Sign Up -->
-            <a href="courses.html">
+            <a href="courses.html" class="nav-cta-link">
                 <button class="nav-cta-button" type="submit">Learn!</button>
             </a>
             <div class="toggle-button">
                 <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- Dropdown Menu -->
+            <div class="dropdown-menu">
+                <ul class="dropdown-menu-list">
+                    <li><a aria-label="link to home page" href="index.html" class="active">Home</a></li>
+                    <li><a aria-label="link to courses page" href="courses.html">Courses</a></li>
+                    <li><a aria-label="link to about page" href="about.html">About</a></li>
+                    <li><a aria-label="link to contact page" href="contact.html">Contact</a></li>
+                    <li>
+                        <a href="courses.html"><button class="dropdown-cta-button" type="submit">Learn!</button></a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -129,6 +142,20 @@
 
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/d490078eea.js" crossorigin="anonymous"></script>
+    <script>
+        const toggleBtn = document.querySelector('.toggle-button')
+        const toggleBtnIcon = document.querySelector('.toggle-button i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
 </body>
 
 </html>
