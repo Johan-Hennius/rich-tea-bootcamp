@@ -139,10 +139,6 @@ hr {
   width: 33%;
 }
 
-.header-navigation {
-  flex: 0 1 auto;
-}
-
 .nav-list {
   display: flex;
 
