@@ -314,6 +314,10 @@ hr {
   padding-bottom: 2rem;
 }
 
+.end-column-courses {
+  grid-column: span 2 / 4;
+}
+
 /* Footer */
 .footer-container {
   display: flex;
