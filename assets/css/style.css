@@ -128,6 +128,7 @@ hr {
 
 /* Navigation */
 .header-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -187,14 +188,22 @@ hr {
 .dropdown-menu {
   display: none;
   order: 2;
+  position: absolute;
+  top: 3.75em;
+  right: 0;
+  left: 0;
 
   text-align: center; 
 
   width: 100%;
   height: 0;
   background-color: rgba(31, 31, 165, .2);
+  backdrop-filter: blur(7px);
+  filter: drop-shadow(0 .5em 3px rgba(9, 9, 48, 0.1));
   overflow: hidden;
   transition: height .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+
 }
 
 .dropdown-menu.open {
