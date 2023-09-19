@@ -203,7 +203,6 @@ hr {
   overflow: hidden;
   transition: height .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
-
 }
 
 .dropdown-menu.open {
@@ -356,5 +355,21 @@ hr {
 
   .dropdown-menu {
     display: block;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-top: 1rem;
+  }
+
+  .column {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .end-column {
+    margin-bottom: 2rem;
   }
 }
