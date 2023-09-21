@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website Title -->
+    <title>Rich Tea Bootcamp | Web Development | Online Courses</title>
+    <!-- Meta details -->
+    <meta name="description" content="Biscuits and code is what it's all about here at Rich Tea Bootcamp">
+    <meta name="keywords" content="Coding courses, coding bootcamp, web development, education, online">
+    <meta name="author" content="Johan B Hennius">
+    <!-- Links -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="header-container">
+            <!-- Logo -->
+            <a aria-label="link to home page" href="index.html" class="rtb-logo">RTB</a>
+            <!-- Navigation Menu -->
+            <ul class="nav-list" role="list">
+                <li><a aria-label="link to home page" href="index.html">Home</a></li>
+                <li><a aria-label="link to courses page" href="courses.html">Courses</a></li>
+                <li><a aria-label="link to about page" href="about.html" >About</a></li>
+                <li><a aria-label="link to contact page" href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <!-- Sign Up -->
+            <a href="courses.html" class="nav-cta-link">
+                <button class="nav-cta-button" type="button">Learn!</button>
+            </a>
+            <div class="toggle-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- Dropdown Menu -->
+            <div class="dropdown-menu">
+                <ul class="dropdown-menu-list">
+                    <li><a aria-label="link to home page" href="index.html">Home</a></li>
+                    <li><a aria-label="link to courses page" href="courses.html">Courses</a></li>
+                    <li><a aria-label="link to about page" href="about.html">About</a></li>
+                    <li><a aria-label="link to contact page" href="contact.html" class="active">Contact</a></li>
+                    <li>
+                        <a href="courses.html"><button class="dropdown-cta-button" type="submit">Learn!</button></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Main page -->
+        <section>
+            <!-- Heading and button -->
+            <section class="heading-and-button-container">
+                <!-- Main Title -->
+                <h1>Get in touch</h1>
+                <!-- Tagline -->
+                <div class="tagline">
+                    <h2>
+                        We are happy to answer all of your questions.
+                    </h2>
+            </section>
+
+            <!-- Main Page Info -->
+            <section class="form-container">
+                <form action="#" class="form">
+                    <input type="text" name="fname" id="fname" class="form-input" placeholder="First Name" required>
+                    <input type="text" name="lname" id="lname" class="form-input" placeholder="Last Name" required>
+                    <input type="text" name="email" id="email" class="form-input" placeholder="Email" required>
+                    <textarea name="question" id="question" cols="30" class="text-area-input" placeholder="Your question"
+                        required></textarea>
+                    <button type="submit" class="form-input-button">Send</button>
+                </form>
+
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer-flex">
+        <div class="footer-container">
+            <!-- Logo -->
+            <a aria-label="link to home page" href="index.html" class="rtb-logo" id="rtb-footer-logo">RTB</a>
+            <hr class="vertical-line">
+            <!-- Social Media Links -->
+            <ul class="social-media-links">
+                <li><a aria-label="link to facebook" href="https://www.facebook.com">Facebook</a></li>
+                <li><a aria-label="link to instagram" href="https://www.instagram.com">Instagram</a></li>
+                <li><a aria-label="link to youtube" href="https://www.youtube.com">Youtube</a></li>
+                <li><a aria-label="link to twitter" href="https://www.twitter.com">Twitter</a></li>
+            </ul>
+            <hr class="vertical-line">
+            <!-- Navigation Menu-->
+            <nav class="footer-navigation">
+                <ul class="footer-nav-list" role="list">
+                    <li><a aria-label="link to home page" href="index.html">Home</a></li>
+                    <li><a aria-label="link to courses page" href="courses.html">Courses</a></li>
+                    <li><a aria-label="link to about page" href="about.html">About</a></li>
+                    <li><a aria-label="link to contact page" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/d490078eea.js" crossorigin="anonymous"></script>
+    <!-- Drop down menu JS -->
+    <script>
+        const toggleBtn = document.querySelector('.toggle-button')
+        const toggleBtnIcon = document.querySelector('.toggle-button i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+
+</html>

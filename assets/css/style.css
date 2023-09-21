@@ -447,7 +447,59 @@ tr:nth-of-type(2n) {
   text-align: left;
 }
 
+/*------------------------------------------------- Contact us */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 2.5rem 1rem;
+}
 
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%
+}
+
+.form-input {
+  border: none;
+  height: 1.625rem;
+  padding: 0 .25rem;
+  margin: .25rem auto;
+  width: 100%;
+}
+
+.text-area-input {
+  border: none;
+  height: 7rem;
+  padding: 0 .25rem;
+  margin: .25rem auto;
+  width: 100%;
+}
+
+.form-input-button {
+  color: white;
+  background-color: black;
+  text-align: center;
+  border: none;
+  border-radius: 1em;
+  width: 6em;
+  height: 2em;
+  margin-top: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: scale 0.2 ease-out;
+}
+
+.form-input-button:hover {
+  background-color: rgb(31, 31, 165);
+  scale: 1.05;
+}
 
 /*------------------------------------------------- Responsive Design */
 @media (max-width: 810px) {
@@ -540,4 +592,6 @@ tr:nth-of-type(2n) {
   td.book-button-flex::before {
     display: none;
   }
+
+  
 }
