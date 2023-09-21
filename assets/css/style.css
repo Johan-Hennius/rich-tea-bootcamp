@@ -377,7 +377,7 @@ td {
 }
 
 tr:nth-of-type(2n) {
-  background: hsl(0 0% 0% / 0.2);
+  background: hsl(0 0% 0% / 0.05);
 }
 
 .book-button {
@@ -435,5 +435,31 @@ tr:nth-of-type(2n) {
 
   .end-column {
     margin-bottom: 2rem;
+  }
+
+  th {
+    display: none;
+  }
+
+  td {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+  }
+
+  td::before {
+    content: attr(data-cell);
+    font-weight: 600;
+  }
+
+  td.book-button-flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  td.book-button-flex::before {
+    display: none;
   }
 }
