@@ -300,11 +300,12 @@ hr {
   color: white;
 
   grid-auto-rows: minmax(15em, auto);
-  align-items: start;
+  align-items: center;
   justify-content: center;
 }
 
 .grid-hr {
+  display: none;
   width: 100%;
   border-bottom: solid 1px white;
 }
@@ -312,14 +313,26 @@ hr {
 .column {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   gap: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  height: 100%;
+}
+
+.column-text {
+  height: 100%;
+  width: 100%;
+  align-self: start;
 }
 
 .end-column-courses {
   grid-column: span 2 / 4;
+}
+
+.book-button-align {
+  justify-self: end;
 }
 
 /*------------------------------------------------- Footer */
@@ -436,6 +449,13 @@ tr:nth-of-type(2n) {
   .end-column {
     margin-bottom: 2rem;
   }
+
+  .grid-hr {
+    display: block;
+    width: 100%;
+    border-bottom: solid 1px white;
+  }
+
 
   th {
     display: none;
