@@ -1,7 +1,7 @@
-/* Font */
+/*------------------------------------------------- Font */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,400;0,9..40,600;1,9..40,200;1,9..40,400;1,9..40,600&display=swap');
 
-/* Visually Hidden */
+/*------------------------------------------------- Visually Hidden */
 .visually-hidden {
 position: absolute;
 position: absolute !important;
@@ -15,14 +15,14 @@ white-space: nowrap !important;
 border: 0 !important;
 }
 
-/* Box sizing rules */
+/*------------------------------------------------- Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Remove default margin */
+/*------------------------------------------------- Remove default margin */
 * {
     margin: 0;
     padding: 0;
@@ -82,10 +82,10 @@ svg {
   }
 }
 
-/* Font */
+/*------------------------------------------------- Font */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
 
-/* General Styles */
+/*------------------------------------------------- General Styles */
 body {
     font-family: 'DM Sans', sans-serif;
     font-size: 1rem;
@@ -126,7 +126,7 @@ hr {
   border-top: 1px solid black;
 }
 
-/* Navigation */
+/*------------------------------------------------- Navigation */
 .header-container {
   position: relative;
   display: flex;
@@ -184,7 +184,7 @@ hr {
   order: 3;
 }
 
-/* Dropdown menu */
+/*------------------------------------------------- Dropdown menu */
 .dropdown-menu {
   display: none;
   order: 2;
@@ -240,10 +240,7 @@ hr {
   scale: 1.05;
 }
 
-
-
-
-/* Heading and button */
+/*------------------------------------------------- Heading and button */
 .heading-and-button-container {
   display: flex;
   flex-direction: column;
@@ -251,6 +248,7 @@ hr {
   align-items: center;
   text-align: center;
   margin-bottom: 2.5em;
+  padding: 0 1rem;
   min-height: 70vh;
   min-width: 70vw;
 }
@@ -282,12 +280,13 @@ hr {
   transition: scale .3s ease-out;
 }
 
-.cta-button:hover {
+.cta-button:hover,
+.cta-button:active {
   background-color: rgb(31, 31, 165);
   scale: 1.05;
 }
 
-/* Grid */
+/*------------------------------------------------- Grid */
 .grid-container {
   display: grid;
   max-width: 100%;
@@ -318,7 +317,7 @@ hr {
   grid-column: span 2 / 4;
 }
 
-/* Footer */
+/*------------------------------------------------- Footer */
 .footer-container {
   display: flex;
 
@@ -353,12 +352,21 @@ hr {
   width: 100%;
 }
 
-/* Responsive Design */
+/*------------------------------------------------- Table*/
+
+
+/*------------------------------------------------- Responsive Design */
 @media (max-width: 810px) {
   .nav-list,
   .nav-cta-button,
   .nav-cta-link {
     display: none;
+  }
+
+  .cta-button:hover,
+  .cta-button:active {
+    background-color: rgb(31, 31, 165);
+    scale: 1.05;
   }
 
   .header-container .toggle-button {
