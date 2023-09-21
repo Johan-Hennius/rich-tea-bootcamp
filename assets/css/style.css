@@ -412,6 +412,43 @@ tr:nth-of-type(2n) {
   scale: 1.05;
 }
 
+/*------------------------------------------------- Meet the Team*/
+.grid-container-team {
+  display: grid;
+  max-width: 100%;
+  /* margin-bottom: 2.5em; */
+  margin-top: 2.5em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3em;
+  background-color: black;
+  color: white;
+
+  grid-auto-rows: minmax(15em, auto);
+  align-items: center;
+  justify-content: center;
+}
+
+.column-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 100%;
+}
+
+.column-text-team {
+  height: 100%;
+  width: 100%;
+  text-align: left;
+}
+
+
+
 /*------------------------------------------------- Responsive Design */
 @media (max-width: 810px) {
   .nav-list,
@@ -444,6 +481,27 @@ tr:nth-of-type(2n) {
   .column {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .grid-container-team {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-top: 1rem;
+  }
+
+  .column-team {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 2rem;
+  }
+
+  .column-text-team {
+    text-align: center;
+  }
+
+  .column-team .column-header {
+    margin-top: 2rem;
   }
 
   .end-column {
