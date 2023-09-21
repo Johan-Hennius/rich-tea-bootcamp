@@ -328,7 +328,7 @@ hr {
 }
 
 .end-column-courses {
-  grid-column: span 2 / 4;
+  grid-column: 2 / span 2;
 }
 
 .book-button-align {
